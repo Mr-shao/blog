@@ -1,0 +1,68 @@
+# Site settings 配置站点
+title: '邵德奇的博客'
+description: '个人博客'
+keyword: '邵德奇, 邵德奇的博客, 史迪奇的博客, 前端, 前端开发, 前端博客, javascript, vuejs, stitch'
+url: 'http://atitle.cn' # your host
+encoding: 'utf-8'
+
+# if you don't need baseurl, you should leave this value blank.
+baseurl: '/blog'
+
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
+
+# Author 配置博主信息
+author: '邵德奇'
+nickname: '史迪奇'
+bio: '前端开发者'
+avatar: '/assets/img/profile.jpg'
+
+# Search
+search: true
+
+# Night mode
+nightMode: true
+
+# Comments
+disqus: false
+disqus_url: 'https://xxx.disqus.com/embed.js'
+changyan: true
+
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban']
+
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'ticTacToe'
+
+# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  # weibo: ''
+  # juejin: ''
+  # instagram: ''
+  github: '//github.com/Mr-shao'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Build settings
+paginate: 2
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md', 'yarn.lock']
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+RSS: false
+
+# Plugins
+plugins: [jekyll-paginate]

@@ -1,0 +1,17 @@
+<nav class="pagination">
+    <input type="hidden" id="total_pages" value="{{ paginator.total_pages }}">
+    <input type="hidden" id="current_pages" value="{{ paginator.page }}">
+    <div class="page-links">
+        {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+            <a href="{{ "/" | relative_url }}" class="page-link" title="Previous Page">&laquo;</a>
+            {% else %}
+            <a href="{{"/page" | append: paginator.previous_page | relative_url }}/" class="page-link" title="Previous Page">&laquo;</a>
+            {% endif %}
+        {% endif %}
+        <div id="page-link-container"></div>
+        {% if paginator.next_page %}
+        <a href="{{"/page" | append: paginator.next_page | relative_url}}/" class="page-link">&raquo;</a>
+        {% endif %}
+    </div>
+</nav>
