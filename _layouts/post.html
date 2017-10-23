@@ -36,7 +36,7 @@
     {% endif %}
     <article class="markdown-body">
         {{ page.content }}
-        <p><a href="{{site.url}}{{page.url}}">本文地址</a></p>
+        <p><a href="{{site.originurl | append:page.url}}">本文地址</a></p>
     </article>
     {% if site.social-share %}
     <div class="social-share-wrapper">

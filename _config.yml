@@ -3,7 +3,10 @@ title: '邵德奇的博客'
 description: '个人博客'
 keyword: '邵德奇, 邵德奇的博客, 史迪奇的博客, 前端, 前端开发, 前端博客, javascript, vuejs, stitch'
 url: 'http://atitle.cn' # your host
+originurl: 'http://atitle.cn/blog'
 encoding: 'utf-8'
+# 博客格式
+permalink: /:categories/:title
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: '/blog'
