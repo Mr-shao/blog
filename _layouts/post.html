@@ -8,7 +8,6 @@
 <input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
 
 {% include header.html %}
-
 <header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}" data-theme="{{ site.theme-color }}">
     <div class="post-wrapper">
         <div class="post-tags">
@@ -44,7 +43,15 @@
     </div>
     {% endif %}
 </div>
-
+<!-- 目录 -->
+<div class="catalog-container">
+    <div class="side-catalog">
+        <h5>
+            <a class="catalog-toggle" href="#">目录 ↑</a>
+        </h5>
+        <ul class="catalog-body"></ul>
+    </div>
+</div>
 <section class="author-detail">
     <section class="post-footer-item author-card">
         <div class="avatar">
@@ -148,5 +155,6 @@ s.setAttribute('data-timestamp', +new Date());
 <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
 <script src="{{ "/assets/js/index.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/one-page-nav.js" | relative_url }}"></script>
 </body>
 </html>

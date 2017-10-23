@@ -867,6 +867,9 @@ a {
   .night-mode .token.keyword {
     color: #61BDCF; }
 
+.catalog-container {
+  display: none; }
+
 @media screen and (min-width: 1920px) {
   .home-banner {
     height: 600px; }
@@ -875,6 +878,50 @@ a {
       font-size: 42px; }
     .home-banner h3 {
       font-size: 22px; } }
+
+@media screen and (min-width: 1200px) {
+  .catalog-toggle {
+    font-size: 18px;
+    color: #666; }
+  .catalog-container {
+    display: inline-block;
+    position: absolute;
+    padding: 20px;
+    top: 540px;
+    right: 70px; }
+    .catalog-container.fixed {
+      position: fixed;
+      top: 60px; }
+    .catalog-container .catalog-body li {
+      font-size: 13px;
+      margin: 5px 0;
+      padding: 5px;
+      color: #ccc;
+      max-width: 170px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      .catalog-container .catalog-body li:hover a {
+        color: #76bf76; }
+      .catalog-container .catalog-body li.active {
+        border-radius: 4px;
+        background-color: #F5F5F5; }
+        .catalog-container .catalog-body li.active a {
+          color: #76bf76; }
+      .catalog-container .catalog-body li.h1_nav {
+        font-size: 15px; }
+      .catalog-container .catalog-body li.h2_nav {
+        text-indent: 8px;
+        font-size: 15px; }
+      .catalog-container .catalog-body li.h3_nav {
+        text-indent: 16px;
+        font-size: 14px; }
+      .catalog-container .catalog-body li.h4_nav {
+        text-indent: 20px;
+        font-size: 13px; }
+      .catalog-container .catalog-body li.h5_nav, .catalog-container .catalog-body li.h6_nav {
+        text-indent: 24px;
+        font-size: 12px; } }
 
 @media screen and (max-width: 960px) {
   .g-container {
