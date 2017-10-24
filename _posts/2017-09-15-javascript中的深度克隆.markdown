@@ -1,10 +1,10 @@
 ---
 layout: post
-title: '什么'
+title: 'javascript深度克隆'
 subtitle: javascript
 date: 2017-05-19
 tags: javascript
-cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg'
+cover: 
 ---
 
 ## 浅克隆与深克隆

@@ -267,33 +267,35 @@ $(document).ready(function(){
         }
     });
 
-    // 生成目录结构
-    function generateCatalog (selector) {
-        var P = $('article.markdown-body'),a,n,t,l,i,c;
-        a = P.find('h1,h2,h3,h4,h5,h6');
-        a.each(function () {
-            n = $(this).prop('tagName').toLowerCase();
-            i = $(this).prop('id');
-            t = $(this).text();
-            c = $('<a href="#'+i+'" rel="nofollow">'+t+'</a>');
-            l = $('<li class="'+n+'_nav"></li>').append(c);
-            $(selector).append(l);
+    if ($('.catalog-body').length && $().onePageNav) {        
+        // 生成目录结构
+        function generateCatalog (selector) {
+            var P = $('article.markdown-body'),a,n,t,l,i,c;
+            a = P.find('h1,h2,h3,h4,h5,h6');
+            a.each(function () {
+                n = $(this).prop('tagName').toLowerCase();
+                i = $(this).prop('id');
+                t = $(this).text();
+                c = $('<a href="#'+i+'" rel="nofollow">'+t+'</a>');
+                l = $('<li class="'+n+'_nav"></li>').append(c);
+                $(selector).append(l);
+            });
+            return true;    
+        }
+        generateCatalog(".catalog-body");
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
         });
-        return true;    
     }
-    generateCatalog(".catalog-body");
-    $('.catalog-body').onePageNav({
-        currentClass: "active",
-        changeHash: !1,
-        easing: "swing",
-        filter: "",
-        scrollSpeed: 700,
-        scrollOffset: 0,
-        scrollThreshold: .2,
-        begin: null,
-        end: null,
-        scrollChange: null,
-        padding: 80
-    });
     
 });
