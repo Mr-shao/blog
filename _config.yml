@@ -6,7 +6,7 @@ url: 'http://atitle.cn' # your host
 originurl: 'http://atitle.cn/blog'
 encoding: 'utf-8'
 # 博客格式
-permalink: /:categories/:title
+permalink: /:categories/:title.html
 
 # if you don't need baseurl, you should leave this value blank.
 baseurl: '/blog'
@@ -19,7 +19,7 @@ nav:
 # Author 配置博主信息
 author: '邵德奇'
 nickname: '史迪奇'
-bio: '前端开发者'
+bio: '前端开发'
 avatar: '/assets/img/profile.jpg'
 
 # Search
