@@ -854,6 +854,9 @@
         blockquote {
             border-left-color: #555A61;
         }
+        table tr{
+            background-color: $color-dark-primary;
+        }
     }
     .read-next-item {
         background-color: #484D59;
@@ -884,6 +887,16 @@
     }
     .token.keyword {
         color: #61BDCF;
+    }
+    #SOHUCS #SOHU_MAIN .module-mobile-cmt-header{
+        background-color: $color-dark-primary;
+        .mobile-header-head .header-comment-number .comment-text,
+        .mobile-header-head .header-login{
+            color: #ddd;
+        }
+        .comment-textarea .comment-input{
+            background-color: $color-dark-primary;
+        }
     }
 }
 
@@ -949,4 +962,8 @@
             }
         }
     }
+}
+// 畅言手机浮层
+#SOHUCS #SOHU_MAIN .module-mobile-cmt-float-bar{
+    display: none !important;
 }
