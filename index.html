@@ -1,6 +1,6 @@
 ---
 layout: default
-home-title: 
+home-title: 邵德奇的博客
 header-img: assets/img/bg.jpg
 description: 记录+学习
 ---
@@ -83,7 +83,7 @@ description: 记录+学习
                     {% if forloop.index > site.recommend-condition-size %}
                         {% break %}
                     {% endif %}
-                    <a href="{{ "tags.html#" | append: tag[0] | relative_url}}" class="tag">{{ tag[0]}}</a>
+                    <a href="{{ "tags.html#" | append: tag[0] | relative_url}}" class="tag">{{ tag[0] }}</a>
                 {% endfor %}
             </section>
             {% endif %}

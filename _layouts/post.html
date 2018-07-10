@@ -2,8 +2,8 @@
 <html>
 {% include post-head.html %}
 <body>
-    <!--[if lt IE 10]>
-<div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+<!--[if lt IE 10]>
+    <div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
 <![endif]-->
 <input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
 
@@ -74,29 +74,29 @@
         {% endif %}
     </section>
     <section class="post-footer-item read-next">
-        {% if page.next.url %}
-        <div class="read-next-item">
-            <a href="{{ page.next.url | relative_url}}" class="read-next-link"></a>
-            <section>
-                <span>{{ page.next.title }}</span>
-                <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
-            </section>
-            {% if page.next.cover %}
-            <div class="filter"></div>
-            <img src="{{ page.next.cover }}" alt="">
-            {% endif %}
-        </div>
-        {% endif %}
         {% if page.previous.url %}
         <div class="read-next-item">
             <a href="{{ page.previous.url | relative_url}}" class="read-next-link"></a>
             <section>
-                <span>{{ page.previous.title }}</span>
+                上一篇：<span>{{ page.previous.title }}</span>
                 <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
             </section>
             {% if page.previous.cover %}
             <div class="filter"></div>
             <img src="{{ page.previous.cover }}" alt="">
+            {% endif %}
+        </div>
+        {% endif %}
+        {% if page.next.url %}
+        <div class="read-next-item">
+            <a href="{{ page.next.url | relative_url}}" class="read-next-link"></a>
+            <section>
+                下一篇：<span>{{ page.next.title }}</span>
+                <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+            </section>
+            {% if page.next.cover %}
+            <div class="filter"></div>
+            <img src="{{ page.next.cover }}" alt="">
             {% endif %}
         </div>
         {% endif %}

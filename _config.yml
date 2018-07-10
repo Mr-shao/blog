@@ -48,7 +48,7 @@ sns:
   # weibo: ''
   # juejin: ''
   # instagram: ''
-  github: '//github.com/Mr-shao'
+  # github: '//github.com/Mr-shao'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar

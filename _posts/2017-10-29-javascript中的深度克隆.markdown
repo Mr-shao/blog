@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 'javascript深度克隆(深拷贝)'
+# title: 'javascript深度克隆(深拷贝)'
 subtitle: javascript
-date: 2017-10-29
-categories: javascript
-tags: javascript
+# date: 2017-10-28
+categories: 
+tags: js
 cover: 
 ---
 
